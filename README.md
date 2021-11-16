@@ -2,16 +2,19 @@
 author/maintainer: [samuel](https://github.com/samuelrawrs)
 
 ## Rationale
-Robots in ROS tend to follow a certain file structure. However, these files tend to be created manually and there's a lot of manual editing of `package.xml` and `CMakeLists.txt`. This script was created to streamline this process as much as possible. However, even tho the basic structure is created, there is a need to **update** the aforementioned files if you add new dependencies, etc.
+Robots in ROS tend to follow similar folder structures (packages). However, these files tend to be created manually and there's a lot of manual editing of `package.xml` and `CMakeLists.txt`. This script was created to streamline this process as much as possible. However, even tho the basic structure is created, there is a need to **update** the aforementioned files if you add new dependencies, etc. Feel free to add your own packages for your own needs.
 
-## Requirements
-1. The editing of `package.xml` is done thru XML starlet:  
+## Requirements (will be checked in script)
+1. This script was developed on Ubuntu 20.04, mainly using ROS noetic and catkin.
+
+2. The editing of `package.xml` is done thru XML starlet and xsltproc:  
 ```
-sudo apt-get update  
+sudo apt-get update
 sudo apt-get install xmlstarlet
+sudo apt install xsltproc
 ```
 
-1. This script assumes you have ROS installed in `/opt/ros/` folder and **catkin** or **colcon** installed which comes by default. If it's missing:   
+3. This script assumes you have ROS installed in `/opt/ros/` folder and **catkin** or **colcon** installed which comes by default. If it's missing:   
 
 install catkin (replace noetic with your distro): 
 ```
