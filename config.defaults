@@ -1,0 +1,14 @@
+### general configs
+def_ros_distro="noetic" 
+def_working_directory="~" 
+
+### robot/package.xml configs
+def_robot_name="robot_0"
+def_build_type="catkin"
+def_author_name="Jane Doe"
+def_author_email="user@todo.todo" 
+def_maintainer_name="John Doe"
+def_maintainer_email="user@todo.todo" 
+def_license="BSD" 
+
+
